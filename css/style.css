@@ -1,111 +1,342 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@media screen and (min-width:1040px) {
+
+    body {
+        height: 130vh;
+        display: grid;
+        grid-template-rows: 0.2fr 2fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer"
+        ;
+    }
+
+    header {
+        font-size: 0;
+        background-color: white;
+        position: sticky;
+        top: 0;
+        grid-area: header;
+    }
 
 
-body {
-    height: 130vh;
-}
+    #logo {
+        display: inline-block;
+        width: 21.3%;
+        font-size: 1rem;
+    }
 
-header {
-    height: 10%;
-    font-size: 0;
-    background-color: white;
-    position: sticky;
-    top: 0;
-}
+    nav {
+        font-size: 1rem;
+    }
 
+    header nav {
+        display: inline-block;
+        width: 78.7%;
+    }
 
-#logo {
-    display: inline-block;
-    width: 21.3%;
-    font-size: 1rem;
-}
+    header nav ul {
+        text-align: center;
+    }
 
-nav {
-    font-size: 1rem;
-}
+    header nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
 
-header nav {
-    display: inline-block;
-    width: 78.7%;
-    /* background-color: blueviolet; */
-}
+    header nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
 
-header nav ul {
-    text-align: center;
-}
+    main {
+        background-color: beige;
+        grid-area: main;
+    }
 
-header nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    /* background-color: coral; */
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
+    #video {
+        max-width: 560px; 
+        width: 50%;
+        height: 40%;
+    }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-}
+    footer {
+        background-color: rgb(153, 153, 136);
+        grid-area: footer;
+    }
 
-hr {
-    border: none;
-    border-top: 3px solid black;
-  }  
+    .ubi {
+        text-align: right;
+    }
 
-main {
-    background-color: beige;
-    height: 70%;
-}
+    .copyright {
+        font-weight: bold;
+    }
 
-.video {
-    display: inline-block;
+    .fieldset {
+        font-weight: bold;
+        text-align: center;
+    }
 
-}
+    .ingrese {
+        text-align: center;
+    }
 
-footer {
-    background-color: rgb(153, 153, 136);
-    height: 30%;
-}
+    .contacto {
+        text-align: center;
+        margin-left: 660px;
+        font-size: 20px;
+    }
 
-.ubi {
-    text-align: right;
-}
+    .enviar {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+    }
 
-.copyright {
-    font-weight: bold;
-}
+    h1 {
+        text-align: center;
+        font-family: 'Alegreya Sans SC', sans-serif;
+    }
 
-.fieldset {
-    font-weight: bold;
-}
+    legend {
+        font-weight: bold;
+    }
 
-.contacto {
-    display: inline-block;
-    text-align: center;
-    margin-left: 660px;
-    font-size: 20px;
-}
+    p {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 20px;
+    }
+}        
 
-.enviar {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-}
+    @media screen and (max-width: 1039px) {
 
-h1 {
-    text-align: center;
-    font-family: 'Alegreya Sans SC', sans-serif;
-}
+        body {
+            height: 130vh;
+            display: grid;
+            grid-template-rows: 0.2fr 2fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "header header"
+                "main main"
+                "footer footer"
+            ;
+        }
 
-legend  {
-    font-weight: bold;
-}
+        header {
+            font-size: 0;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            grid-area: header;
+        }
+    
+    
+        #logo {
+            display: inline-block;
+            width: 21.3%;
+            font-size: 1rem;
+        }
+    
+        nav {
+            font-size: 1rem;
+        }
+    
+        header nav {
+            width: 78.7%;
+        }
+    
+        header nav ul {
+            text-align: center;
+            justify-content: center;
+        }
+    
+        header nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        main {
+            background-color: beige;
+            grid-area: main;
+        }
 
-p {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 20px;
-}
+        #video {
+            max-width: 560px;
+            width: 80%;
+            height: 50%;
+        }
+    
+        footer {
+            background-color: rgb(153, 153, 136);
+            grid-area: footer;
+        }
+    
+        .ubi {
+            text-align: right;
+        }
+    
+        .copyright {
+            font-weight: bold;
+        }
+    
+        .fieldset {
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        .ingrese {
+            text-align: center;
+        }
+    
+        .contacto {
+            text-align: center;
+            margin-left: 660px;
+            font-size: 20px;
+        }
+    
+        .enviar {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+    
+        h1 {
+            text-align: center;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+    
+        legend {
+            font-weight: bold;
+        }
+    
+        p {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+
+        body {
+            height: 130vh;
+            display: grid;
+            grid-template-rows: 0.2fr 2fr 1fr;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+                "header"
+                "main"
+                "footer"
+            ;
+        }
+
+        header {
+            font-size: 0;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            grid-area: header;
+        }
+    
+    
+        #logo {
+            display: inline-block;
+            width: 21.3%;
+            font-size: 1rem;
+        }
+    
+        nav {
+            font-size: 1rem;
+        }
+    
+        header nav {
+            width: 78.7%;
+        }
+    
+        header nav ul {
+            text-align: center;
+            justify-content: center;
+        }
+    
+        header nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        main {
+            background-color: beige;
+            grid-area: main;
+        }
+
+        #video {
+            max-width: 560px; 
+            width: 100%;
+            height: 40%;
+        }
+    
+        footer {
+            background-color: rgb(153, 153, 136);
+            grid-area: footer;
+        }
+    
+        .ubi {
+            text-align: right;
+        }
+    
+        .copyright {
+            font-weight: bold;
+        }
+    
+        .fieldset {
+            font-weight: bold;
+        }
+    
+        .contacto {
+            display: inline-block;
+            text-align: center;
+            margin-left: 660px;
+            font-size: 20px;
+        }
+    
+        .enviar {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+        }
+    
+        h1 {
+            text-align: center;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+    
+        legend {
+            font-weight: bold;
+        }
+    
+        p {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 20px;
+        }
+    }    
