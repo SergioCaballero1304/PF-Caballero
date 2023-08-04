@@ -58,10 +58,37 @@
         grid-area: main;
     }
 
-    #video {
-        max-width: 560px;
-        width: 50%;
-        height: 40%;
+    .tituloDeOfertas {
+        font-size: 42px;
+        margin-top: 50px;
+    }
+
+    .tituloDeCarrito {
+        font-size: 42px;
+        margin-top: 160px;
+    }
+
+    .tablas {
+        margin: 0;
+        position: absolute;
+        font-size: 24px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 1px solid black; */
+    }
+
+    main table {
+        margin-bottom: 10px;
+    }
+
+    main table tr th {
+        border: 2px solid black;
+    }
+
+    main table tr td {
+        border: 2px solid black;
+        padding-right: 130px;
     }
 
     footer {
@@ -342,7 +369,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    
+
     body {
         height: 400vh;
         display: grid;
@@ -452,16 +479,18 @@
     }
 }
 
-.contenido{
+.contenido {
     max-width: 1100px;
     width: 100%;
     margin: 40px auto;
     display: flex;
 }
-.mostrador{
+
+.mostrador {
     width: 100%;
 }
-.mostrador .fila{
+
+.mostrador .fila {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -474,7 +503,7 @@
     margin-left: 50px;
 }
 
-.mostrador .fila .item{
+.mostrador .fila .item {
     max-width: 210px;
     padding: 30px;
     height: 400px;
@@ -484,7 +513,7 @@
 
 .mostrador .fila .item .foto {
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 260px;
     margin-bottom: 300px;
@@ -492,7 +521,7 @@
 }
 
 .mostrador .fila .item .foto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .compra {
@@ -500,19 +529,21 @@
     color: white;
 }
 
-.mostrador .fila .item img{
+.mostrador .fila .item img {
     width: 100%;
     margin: 30px 0;
 }
-.mostrador .fila .item .descripcion{
+
+.mostrador .fila .item .descripcion {
     color: #707070;
     font-weight: bold;
 }
-.mostrador .fila .item .precio{
+
+.mostrador .fila .item .precio {
     color: #f85151;
     font-weight: bold;
     font-size: 20px;
-}    
+}
 
 .prox {
     font-size: 3rem;

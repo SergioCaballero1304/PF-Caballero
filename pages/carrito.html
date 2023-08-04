@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,18 @@
     <title>Carrito</title>
 </head>
 
+
+
 <body>
+
+    <!-- Comienzo de header -->
+
     <header>
         <div id="logo">
             <img src="../images/PETSHOP.jpg" alt="Petshop" width="400" height="100">
         </div>
         <nav>
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
@@ -40,16 +45,55 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Fin de header -->
+
+    <!-- Comienzo de main -->
+
     <main>
         <figure class="text-center">
             <blockquote class="blockquote">
-              <p class="prox">Próximamente</p>
+                <p class="tituloDeCarrito">Carrito de compras</p>
             </blockquote>
-            <figcaption class="blockquote-footer">
-              PETSHOP
-            </figcaption>
-          </figure>
+        </figure>
+        <div class="tablas">
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Comida para perro</td>
+                    <td>1</td>
+                    <td>$ 1.500</td>
+                </tr>
+                <tr>
+                    <td>Juguete para perro</td>
+                    <td>1</td>
+                    <td>$ 350</td>
+                </tr>
+                <tr>
+                    <td>Pechera para perro</td>
+                    <td>1</td>
+                    <td>$ 1.100</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Total</b></td>
+                    <td>$ 2.950</td>
+                </tr>
+            </table>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-success" class="comprar">Realizar compra</button>
+                <button type="button" class="btn btn-warning">Seguir comprando</button>
+            </div>
+        </div>
     </main>
+
+    <!-- Fin de main -->
+
+    <!-- Comienzo de footer -->
+
     <footer>
         <div class="ubi">
             <img src="../images/ubi.jpeg" alt="Ubicación" width="300" height="300">
@@ -62,6 +106,9 @@
                 El contenido de este sitio web está protegido por derechos de autor.
             </p>
     </footer>
+
+    <!-- Fin de footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
