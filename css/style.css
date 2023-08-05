@@ -1,4 +1,4 @@
-@media screen and (min-width:1040px) {
+@media screen and (min-width:1250px) {
 
     body {
         height: 130vh;
@@ -18,6 +18,7 @@
         position: sticky;
         top: 0;
         grid-area: header;
+        z-index: 1;
     }
 
 
@@ -58,6 +59,73 @@
         grid-area: main;
     }
 
+    .contenido {
+        max-width: 1100px;
+        width: 100%;
+        margin: 40px auto;
+        display: flex;
+    }
+    
+    .mostrador {
+        width: 100%;
+    }
+    
+    .mostrador .fila {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .mes {
+        display: inline-block;
+        height: 50px;
+        margin-left: 50px;
+    }
+    
+    .mostrador .fila .item {
+        max-width: 210px;
+        padding: 30px;
+        height: 400px;
+        text-align: center;
+        margin: 0 10px;
+    }
+    
+    .mostrador .fila .item .foto {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 260px;
+        margin-bottom: 300px;
+        display: inline-block;
+    }
+    
+    .mostrador .fila .item .foto:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .compra {
+        background-color: #f85151;
+        color: white;
+    }
+    
+    .mostrador .fila .item img {
+        width: 100%;
+        height: 260px;
+        margin: 30px 0;
+    }
+    
+    .mostrador .fila .item .descripcion {
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .mostrador .fila .item .precio {
+        color: #f85151;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
     .tituloDeProductos {
         font-size: 46px;
         margin-top: 20px;
@@ -75,17 +143,16 @@
 
     .tituloDeCarrito {
         font-size: 42px;
-        margin-top: 160px;
+        margin-top: 60px;
     }
 
     .tablas {
         margin: 0;
         position: absolute;
-        font-size: 24px;
+        font-size: 18px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* border: 1px solid black; */
     }
 
     main table {
@@ -151,7 +218,7 @@
     }
 }
 
-@media screen and (max-width: 1039px) {
+@media screen and (max-width: 1249px) {
 
     body {
         height: 130vh;
@@ -171,6 +238,7 @@
         position: sticky;
         top: 0;
         grid-area: header;
+        z-index: 1;
     }
 
 
@@ -207,14 +275,125 @@
     }
 
     main {
-        background-color: beige;
+        background-color: #e4e4e4e5;
         grid-area: main;
     }
 
-    #video {
-        max-width: 560px;
-        width: 80%;
-        height: 50%;
+    .contenido {
+        max-width: 1100px;
+        width: 100%;
+        margin: 40px auto;
+        display: flex;
+    }
+
+    .mostrador {
+        width: 100%;
+    }
+
+    .mostrador .fila {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .mes {
+        display: inline-block;
+        height: 50px;
+        margin-left: 50px;
+    }
+    
+    .mostrador .fila .item {
+        max-width: 210px;
+        padding: 20px;
+        height: 400px;
+        text-align: center;
+        margin: 0 10px;
+    }
+    
+    .mostrador .fila .item .foto {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 200px;
+        height: 350px;
+        margin-bottom: 300px;
+        display: inline-block;
+    }
+    
+    .mostrador .fila .item .foto:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .compra {
+        background-color: #f85151;
+        color: white;
+    }
+    
+    .mostrador .fila .item img {
+        width: 100%;
+        height: 160px;
+        margin: 30px 0;
+    }
+    
+    .mostrador .fila .item .descripcion {
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .mostrador .fila .item .precio {
+        color: #f85151;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .tituloDeProductos {
+        font-size: 46px;
+        margin-top: 20px;
+    }
+
+    .tituloDeOfertas {
+        font-size: 42px;
+        margin-top: 50px;
+    }
+
+    .tituloDeHistorial {
+        font-size: 42px;
+        margin-top: 20px;
+    }
+
+    .tituloDeCarrito {
+        font-size: 42px;
+        margin-top: 60px;
+    }
+
+    .tablas {
+        margin: 0;
+        position: absolute;
+        font-size: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main table {
+        margin-bottom: 10px;
+        width: 600px;
+        height: 157px;
+    }
+
+    main table tr {
+        width: 616px;
+        height: 31px;
+    }
+
+    main table tr th {
+        border: 2px solid black;
+    }
+
+    main table tr td {
+        border: 2px solid black;
+        padding-right: 130px;
     }
 
     footer {
@@ -267,10 +446,11 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 948px) {
 
     body {
-        height: 130vh;
+        height: 360vh;
         display: grid;
         grid-template-rows: 0.2fr 2fr 1fr;
         grid-template-columns: repeat(1, 1fr);
@@ -287,6 +467,7 @@
         position: sticky;
         top: 0;
         grid-area: header;
+        z-index: 1;
     }
 
 
@@ -323,14 +504,120 @@
     }
 
     main {
-        background-color: beige;
+        background-color: #e4e4e4e5;
         grid-area: main;
     }
 
-    #video {
-        max-width: 560px;
+    .contenido {
+        max-width: 1100px;
         width: 100%;
-        height: 40%;
+        margin: 40px auto;
+        display: flex;
+    }
+
+    .mostrador {
+        width: 100%;
+    }
+
+    .mostrador .fila {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    
+    .mes {
+        display: inline-block;
+        height: 50px;
+        margin-left: 50px;
+    }
+    
+    .mostrador .fila .item {
+        max-width: 210px;
+        padding: 20px;
+        height: 400px;
+        text-align: center;
+        margin: 0 10px;
+    }
+    
+    .mostrador .fila .item .foto {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 200px;
+        height: 360px;
+        margin-bottom: 300px;
+        display: inline-block;
+    }
+    
+    .mostrador .fila .item .foto:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .compra {
+        background-color: #f85151;
+        color: white;
+    }
+    
+    .mostrador .fila .item img {
+        width: 100%;
+        height: 160px;
+        margin: 30px 0;
+    }
+    
+    .mostrador .fila .item .descripcion {
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .mostrador .fila .item .precio {
+        color: #f85151;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .tituloDeProductos {
+        font-size: 46px;
+        margin-top: 20px;
+    }
+
+    .tituloDeOfertas {
+        font-size: 42px;
+        margin-top: 50px;
+    }
+
+    .tituloDeHistorial {
+        font-size: 42px;
+        margin-top: 20px;
+    }
+
+    .tituloDeCarrito {
+        font-size: 42px;
+        margin-top: 40px;
+    }
+
+    .tablas {
+        margin: 0;
+        position: absolute;
+        font-size: 14px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    main table {
+        margin-bottom: 10px;
+        width: 400px;
+        height: 100px;
+    }
+
+    main table tr th {
+        border: 2px solid black;
+    }
+
+    main table tr td {
+        border: 2px solid black;
+        padding-right: 5px;
     }
 
     footer {
@@ -398,6 +685,7 @@
         position: sticky;
         top: 0;
         grid-area: header;
+        z-index: 1;
     }
 
 
@@ -434,7 +722,7 @@
     }
 
     main {
-        background-color: beige;
+        background-color: #e4e4e4e5;
         grid-area: main;
     }
 
@@ -487,76 +775,4 @@
         font-family: 'Alegreya Sans SC', sans-serif;
         font-size: 20px;
     }
-}
-
-.contenido {
-    max-width: 1100px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-}
-
-.mostrador {
-    width: 100%;
-}
-
-.mostrador .fila {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.mes {
-    display: inline-block;
-    height: 50px;
-    margin-left: 50px;
-}
-
-.mostrador .fila .item {
-    max-width: 210px;
-    padding: 30px;
-    height: 400px;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.mostrador .fila .item .foto {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 260px;
-    margin-bottom: 300px;
-    display: inline-block;
-}
-
-.mostrador .fila .item .foto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.compra {
-    background-color: #f85151;
-    color: white;
-}
-
-.mostrador .fila .item img {
-    width: 100%;
-    height: 260px;
-    margin: 30px 0;
-}
-
-.mostrador .fila .item .descripcion {
-    color: #707070;
-    font-weight: bold;
-}
-
-.mostrador .fila .item .precio {
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.prox {
-    font-size: 3rem;
-    margin-top: 300px;
 }
